@@ -1,0 +1,459 @@
+/* Estilos generales */
+* {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos header */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: 600;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+/* Estilos main */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-section {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-section h2 {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.header-section p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+button a,
+a.button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+button a:hover,
+a.button:hover {
+    background-color: #FFD700;
+}
+
+
+/* Estilos para la sección "Lo más vendido" */
+section#lo-mas-vendido {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+section#lo-mas-vendido h2 {
+    font-size: 35px;
+    color: #003366;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+section#lo-mas-vendido p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.item {
+    background-color: #003366;
+    padding: 10px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item:nth-child(1) {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.item:nth-child(4) {
+    grid-row: span 2;
+}
+
+.item:nth-child(10) {
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+.item:nth-child(11) {
+    display: none;
+}
+
+
+/* Estilos para la sección "Productos" */
+section#productos {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+section#productos h2 {
+    font-size: 35px;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.product {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Le pone sombras al recuadro de cada producto*/
+    width: 45%;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.product-image {
+    flex: 1;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-details {
+    flex: 2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product h3 {
+    font-size: 18px;
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.product button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #FFD700;
+}
+
+
+/* Estilos para la sección "Sobre nosotros" */
+section#sobre-nosotros {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+section#sobre-nosotros h2 {
+    font-size: 35px;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 1;
+    padding: 10px;
+}
+
+.about-text p {
+    font-size: 20px;
+    margin: 0;
+    text-align: left;
+}
+
+.about-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-images img {
+    max-width: 450px;
+    height: auto;
+}
+
+
+/* Seccion informacion */
+section#informacion {
+    background-color: #f5f5f5;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section#informacion h2 {
+    font-size: 35px;
+    color: #003366;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+section#informacion .section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* formulario de suscripción */
+.subscribe-form {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: left;
+}
+
+.subscribe-form h3 {
+    font-size: 25px;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.subscribe-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.subscribe-form label {
+    font-size: 16px;
+    color: #003366;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.subscribe-form input[type="text"],
+.subscribe-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #003366;
+}
+
+.subscribe-form p {
+    font-size: 16px;
+    color: #003366;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.subscribe-form input[type="radio"] {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.subscribe-form button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.subscribe-form button:hover {
+    background-color: #FFD700;
+}
+
+/* tabla de horario de atención */
+.business-hours {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.business-hours h3 {
+    font-size: 25px;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #003366;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: none;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+}
+
+td {
+    background-color: #f5f5f5;
+    color: #003366;
+}
+
+tr:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+
+
+/* Estilos para el footer */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.footer-container::before {
+    content: "";
+    background-color: #003366;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-left,
+.footer-right {
+    background-color: transparent;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
